@@ -74,6 +74,11 @@ app.post('/api/send-email', async (req, res) => {
   }
 });
 
+// GET /  — fallback to index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 if (require.main === module) {
   const PORT = process.env.PORT || 3001;
   app.listen(PORT, () => {
