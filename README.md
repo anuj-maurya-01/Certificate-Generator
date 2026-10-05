@@ -2,7 +2,7 @@
 
 A browser-based tool for generating personalised certificates from a template image and an Excel spreadsheet, with built-in bulk email delivery via SMTP.
 
-> Built by [Devjit Panja](https://www.linkedin.com/in/devjitpanja/)
+> Built by [Anuj Maurya](https://github.com/anuj-maurya-01)
 
 ---
 
@@ -29,8 +29,8 @@ A browser-based tool for generating personalised certificates from a template im
 ### Installation
 
 ```bash
-git clone https://github.com/devjitpanja/WiMailer.git
-cd WiMailer
+git clone https://github.com/anuj-maurya-01/Certificate-Generator.git
+cd Certificate-Generator
 npm install
 ```
 
@@ -233,4 +233,4 @@ MIT
 
 ## Author
 
-**Devjit Panja** — [LinkedIn](https://www.linkedin.com/in/devjitpanja/)
+**Anuj Maurya** — [GitHub Profile](https://github.com/anuj-maurya-01)
