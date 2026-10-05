@@ -74,8 +74,12 @@ app.post('/api/send-email', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`Certificate mailer running → http://localhost:${PORT}`);
-  console.log('Open http://localhost:' + PORT + '/index.html in your browser.');
-});
+if (require.main === module) {
+  const PORT = process.env.PORT || 3001;
+  app.listen(PORT, () => {
+    console.log(`Certificate mailer running → http://localhost:${PORT}`);
+    console.log('Open http://localhost:' + PORT + '/index.html in your browser.');
+  });
+}
+
+module.exports = app;

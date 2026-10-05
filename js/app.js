@@ -194,7 +194,7 @@
   const canvasContainer   = document.getElementById('canvasContainer');
   const canvasHint        = document.getElementById('canvasHint');
 
-  const API_BASE = 'http://localhost:3001';
+  const API_BASE = window.location.origin;
 
   const emailSubject      = document.getElementById('emailSubject');
   const emailBody         = document.getElementById('emailBody');
