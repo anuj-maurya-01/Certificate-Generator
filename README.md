@@ -233,4 +233,4 @@ MIT
 
 ## Author
 
-**Anuj Maurya** — [GitHub Profile](https://github.com/anuj-maurya-01)
+**Anuj Maurya** — [Linkedin Profile](https://www.linkedin.com/in/anujmauryaucer/) 
