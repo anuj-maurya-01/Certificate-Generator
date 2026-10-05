@@ -6,7 +6,6 @@ const path       = require('path');
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));
-app.use(express.static(path.join(__dirname)));
 
 // POST /api/test-smtp  — verify credentials without sending
 app.post('/api/test-smtp', async (req, res) => {
@@ -74,12 +73,11 @@ app.post('/api/send-email', async (req, res) => {
   }
 });
 
-// GET /  — fallback to index.html
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
-
 if (require.main === module) {
+  app.use(express.static(path.join(__dirname)));
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+  });
   const PORT = process.env.PORT || 3001;
   app.listen(PORT, () => {
     console.log(`Certificate mailer running → http://localhost:${PORT}`);
